@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@font-face {
+    font-family: pinka;
+    src: url('/fonts/Pink\ Shine.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px black;
+     font-family: "pinka";
+}
+
+
+h2{
+     font-family: "pinka", cursive;
+    font-size: 2.0em;
+    color: orange;
+}
+
+body{
+    background-image: linear-gradient(to right, hsla(349, 21%, 16%, 0.856), hsla(349, 21%, 25%, 0.856));
+    background-attachment: fixed;
+    text-align: justify;
+    background-attachment: fixed;
+     font-family: "Caveat", cursive;
+     text-align: center;
+}
+img{
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    border-radius: 45px;
+}
+ul{
+    font-size: 1.3em;
+    color: rgb(206, 198, 198);
+    font-family: "Gloria Hallelujah", cursive;
+    list-style: inside;
+ }

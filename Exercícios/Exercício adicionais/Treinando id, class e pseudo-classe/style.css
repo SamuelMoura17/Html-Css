@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-image: linear-gradient(to right,darkgreen, rgb(82, 173, 82), darkgreen);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: justify;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    font: italic normal 5em 'Bebas Neue', sans-serif;
+    color:  rgb(35, 51, 3);
+    text-shadow: 1px 1px 1px black;
+    height: 80px;
+}
+
+h2{
+    font-size: 2.3em;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    color: #FFD700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+div#taca{
+    text-align: center;
+}
+
+div.class{
+    max-width: 1000px;
+}
+
+img.brasileirao{
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.596);
+    border-radius: 10px;
+    height: 450px;
+}
+
+img.tabela{
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.596);
+    border-radius: 10px;
+}
+
+div.tabela{
+    text-align: center;
+}
+
+li#creditos{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: black;
+}
