@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-attachment: fixed;
+}
+
+p{
+    font-size: 28px;
+    position: relative;
+    top: 300px;
+    left: 1200px;
+}
+
+a{
+}
