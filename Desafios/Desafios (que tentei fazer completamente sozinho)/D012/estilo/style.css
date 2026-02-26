@@ -67,13 +67,20 @@ p.p-antes{
 }
 
 div.container{
-    background-image: url("../imagens/background001.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    background-position: center;
     padding: 30px;
     margin: -5% 0px 3% 0px;
 
+}
+
+div#imagem1{
+    background-image: url(../imagens/background001.jpg);
+}
+
+div#imagem2{
+    background-image: url(../imagens/background002.jpg);
 }
 
 div.conteudo{
