@@ -78,10 +78,12 @@ div.container{
 
 div#imagem1{
     background-image: url(../imagens/background001.jpg);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 div#imagem2{
     background-image: url(../imagens/background002.jpg);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 div.conteudo{
@@ -94,8 +96,9 @@ div.conteudo{
 p.paragrafo{
     background-color: #02130275;
 
-    width: 60%;
-    
+    display: inline-block;
+
+
     padding: 20px 5px 20px 10px;
     margin: 50px 0px 0px 0px;
 
