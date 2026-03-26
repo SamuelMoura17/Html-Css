@@ -15,7 +15,7 @@
             border-collapse: collapse;
 
             position: relative;
-        } f
+        } 
 
         caption{
             font-size: 1.5em;
@@ -24,6 +24,14 @@
             padding: 10px;
             
             background-color: lightgray;
+        }
+
+        thead > tr > th{
+            position: sticky;
+
+            top: -1px;
+
+            background-color: #383838;
         }
 
         td, th{
@@ -36,13 +44,6 @@
             color: white;
         }
 
-        thead > tr > th{
-            position: sticky;
-            top: -1px;
-
-            background-color: #383838;
-        }
-
         tbody > tr:nth-child(odd){ /* 2n - 1 */
             background-color: white;
         }
@@ -53,6 +54,16 @@
 
         td.num{
             text-align: right;
+        }
+
+        a#voltar{
+            position: absolute;
+            left: 0;
+        }
+
+        a#proxima{
+            position: absolute;
+            right: 0;
         }
     </style>
 </head>
@@ -328,10 +339,26 @@
 
     </table>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab, atque, iste porro possimus aperiam iusto error quisquam exercitationem aut aspernatur? Veniam dolorum voluptatem totam repudiandae quisquam ut placeat odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit neque possimus necessitatibus consequatur, suscipit recusandae dolore commodi fugiat dolorem quod nam quasi architecto voluptas? Vitae aspernatur similique cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident voluptates sunt sapiente nam quaerat temporibus cupiditate! Rem obcaecati quisquam pariatur eum veritatis, esse, temporibus magnam voluptatibus doloremque delectus aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab, atque, iste porro possimus aperiam iusto error quisquam exercitationem aut aspernatur? Veniam dolorum voluptatem totam repudiandae quisquam ut placeat odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit neque possimus necessitatibus consequatur, suscipit recusandae dolore commodi fugiat dolorem quod nam quasi architecto voluptas? Vitae aspernatur similique cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident voluptates sunt sapiente nam quaerat temporibus cupiditate! Rem obcaecati quisquam pariatur eum veritatis, esse, temporibus magnam voluptatibus doloremque delectus aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab, atque, iste porro possimus aperiam iusto error quisquam exercitationem aut aspernatur? Veniam dolorum voluptatem totam repudiandae quisquam ut placeat odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit neque possimus necessitatibus consequatur, suscipit recusandae dolore commodi fugiat dolorem quod nam quasi architecto voluptas? Vitae aspernatur similique cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident voluptates sunt sapiente nam quaerat temporibus cupiditate! Rem obcaecati quisquam pariatur eum veritatis, esse, temporibus magnam voluptatibus doloremque delectus aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab, atque, iste porro possimus aperiam iusto error quisquam exercitationem aut aspernatur? Veniam dolorum voluptatem totam repudiandae quisquam ut placeat odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit neque possimus necessitatibus consequatur, suscipit recusandae dolore commodi fugiat dolorem quod nam quasi architecto voluptas? Vitae aspernatur similique cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident voluptates sunt sapiente nam quaerat temporibus cupiditate! Rem obcaecati quisquam pariatur eum veritatis, esse, temporibus magnam voluptatibus doloremque delectus aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab, atque, iste porro possimus aperiam iusto error quisquam exercitationem aut aspernatur? Veniam dolorum voluptatem totam repudiandae quisquam ut placeat odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit neque possimus necessitatibus consequatur, suscipit recusandae dolore commodi fugiat dolorem quod nam quasi architecto voluptas? Vitae aspernatur similique cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident voluptates sunt sapiente nam quaerat temporibus cupiditate! Rem obcaecati quisquam pariatur eum veritatis, esse, temporibus magnam voluptatibus doloremque delectus aut.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab, atque, iste porro possimus aperiam iusto error quisquam exercitationem aut aspernatur? Veniam dolorum voluptatem totam repudiandae quisquam ut placeat odit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugit neque possimus necessitatibus consequatur, suscipit recusandae dolore commodi fugiat dolorem quod nam quasi architecto voluptas? Vitae aspernatur similique cumque Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident voluptates sunt sapiente nam quaerat temporibus cupiditate! Rem obcaecati quisquam pariatur eum veritatis, esse, temporibus magnam voluptatibus doloremque delectus aut.</p>
+
     <footer>
 
-        <a href="index.html">
+        <a href="index.html" id="voltar">
             <p>Voltar</p>
+        </a>
+
+        <a href="tabela003.html" id="proxima">
+            <p>Próxima Página</p>
         </a>
 
     </footer>
