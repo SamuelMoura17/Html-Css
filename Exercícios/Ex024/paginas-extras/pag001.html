@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt0br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas Responsivas</title>
+    <title>Site de Teste</title>
     <style>
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            padding: 10px;
         }
 
         table {
@@ -23,28 +27,16 @@
             background-color: rgb(228, 228, 228);
         }
 
-        div#container{
-            overflow-x: auto;
+        tr:nth-child(odd) {
+            background-color: white; 
         }
 
-        a#voltar{
-
-            position: absolute;
-            bottom: 0;
-            left: 2;
-        }
 
     </style>
 </head>
 <body>
-    
-    <h1>Tabelas em telas pequenas</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci facilis nobis officiis dolore, nemo nisi laborum! Voluptatibus nobis nam excepturi placeat error, voluptates earum repellendus ipsum, obcaecati eligendi dicta?</p>
-
-    <div id="container">
-
-        <table>
+    <table>
 
             <caption>Vendas de produtos por mês</caption>
 
@@ -297,14 +289,6 @@
             </tbody>
 
         </table>
-
-    </div>
-
-    <footer>
-
-        <a href="tabela005.html" id="voltar">Voltar</a>
-
-    </footer>
 
 </body>
 </html>
