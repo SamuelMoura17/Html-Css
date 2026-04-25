@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formulário de Cadastro de Usuário</title>
+    <style>
+        *{
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body{
+
+            background: linear-gradient(to right, #E84E00, #FF9A3C);
+
+        }
+
+        h1{
+
+            text-align: center;
+
+            color: white;
+            
+            font-size: 40px;
+
+        }
+
+        h2{
+
+            color: black;
+
+            font-size: 30px;
+
+            text-align: center;
+
+        }
+
+        form{
+
+            background-color: rgb(255, 255, 255);
+
+            width: 70%;
+            height: 100vh;
+
+            margin: auto;
+            padding: 20px;
+
+            border-radius: 20px;
+
+        }
+
+        p{
+
+            color: black;
+
+            font-size: 20px;
+
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Formulário de Cadastro de Usuário</h1>
+
+    <form autocomplete="off">
+
+        <h2>Dados Pessoais</h2>
+
+        <p>Nome: 
+            
+            <input type="text" id="nome">
+        
+        </p>
+
+        <p>Data de Nascimento: 
+            
+            <input type="date" id="data">
+        
+        </p>
+
+        <p>Gênero: 
+            
+            <input type="text" name="" id="Genero"> <input type="checkbox" name="" id="caixa"> Prefiro não dizer.
+        
+        </p>
+
+        <h2>Contato</h2>
+
+        <p>Email: 
+            
+            <input type="email" id="email">
+        
+        </p>
+
+        <p>Telefone: 
+            
+            <input type="tel" id="telefone">
+        
+        </p>
+
+        <h2>Acesso</h2>
+
+        <p>Usuário: 
+            
+            <input type="text" id="usuario">
+        
+        </p>
+
+        <p>Senha:
+
+            <input type="password" id="senha">
+
+        </p>
+
+        <p>Aceito os termos de uso
+
+            <input type="checkbox" id="aceito">
+
+        </p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
