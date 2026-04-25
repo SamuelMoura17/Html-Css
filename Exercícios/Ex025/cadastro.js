@@ -1,0 +1,1 @@
+Bem-vindo ao cadastro de usuários!
