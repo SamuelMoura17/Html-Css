@@ -135,27 +135,27 @@
     
     <h1>Formulário de Cadastro de Usuário</h1>
 
-    <form autocomplete="off">
+    <form action="cadastro.js" autocomplete="on">
 
         <h2 class="sub">Dados Pessoais</h2>
 
         <p class="paragrafos"><label for="nome">Nome Completo:</label> 
             
-            <input type="text" id="nome" class="inputs">
+            <input type="text" id="nome" class="inputs" minlength="5" maxlength="20" placeholder="Nome de Usuário" required autocomplete="name">
         
         </p>
 
-        <p class="paragrafos"><label for="data">Data de Nascimento: (Adiciones os /)</label> 
+        <p class="paragrafos"><label for="data">Data de Nascimento:</label> 
             
-            <input type="datetime" id="data" class="inputs">
+            <input type="date" id="data" class="inputs" min="1900-01-01" max="2026-04-26" required>
         
         </p>
 
         <p class="paragrafos"><label for="genero">Gênero:</label> 
             
-            <input type="text" id="genero" class="inputs" style="margin-bottom: -15px;">
+            <input type="text" id="genero" class="inputs" style="margin-bottom: -15px;" placeholder="Masculino, Feminino, Outro..." autocomplete="sex">
 
-            <div id="informar"><input type="checkbox" name="" id=""> Prefiro não informar.</div>
+            <div id="informar"><input type="checkbox" name="naoinfo" id="inaoinfo"> Prefiro não informar.</div>
             
         
         </p>
@@ -196,7 +196,7 @@
 
         <p class="paragrafos"><label for="aceito">Aceito os termos de uso</label>
 
-            <input type="checkbox" id="aceito" style="display: block; margin-left: 10px;">
+            <input type="checkbox" id="aceito" style="display: block; margin-left: 10px;" required>
 
         </p>
 
