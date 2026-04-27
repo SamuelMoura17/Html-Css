@@ -1,1 +1,2 @@
-Bem-vindo ao cadastro de usuários!
+Os dados foram enviados com sucesso!
+Aprenda Php para saber o que fazer com eles.
