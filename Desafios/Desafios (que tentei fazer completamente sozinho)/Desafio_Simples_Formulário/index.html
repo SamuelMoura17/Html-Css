@@ -6,9 +6,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Formulário de Cadastro de Usuário</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
         *{
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Inter", sans-serif;
 
         }
 
@@ -25,9 +28,11 @@
             color: #FFFFFF;
             text-shadow: 0 2px 8px rgba(150, 60, 0, 0.4);
             
-            font-size: 40px;
+            font-size: 46px;
 
             margin-bottom: 50px;
+
+            font-family: 'Playfair Display', serif;
 
         }
 
@@ -48,6 +53,8 @@
         }
 
         h2.sub{
+            
+            font-family: 'Playfair Display', serif;
 
             color: #333333;
 
@@ -164,13 +171,13 @@
 
         <p class="paragrafos"><label for="email">Email:</label> 
             
-            <input type="email" id="email" class="inputs">
+            <input type="email" id="email" class="inputs" required autocomplete="email">
         
         </p>
 
         <p class="paragrafos"><label for="telefone">Telefone:</label> 
             
-            <input type="tel" id="telefone" class="inputs">
+            <input type="tel" id="telefone" class="inputs" required autocomplete="tel">
         
         </p>
 
@@ -178,19 +185,19 @@
 
         <p class="paragrafos"><label for="usuario">Usuário:</label> 
             
-            <input type="text" id="usuario" class="inputs">
+            <input type="text" id="usuario" class="inputs" required autocomplete="username" minlength="5" maxlength="30">
         
         </p>
 
         <p><label for="senha">Senha:</label>
 
-            <input type="password" id="senha" class="inputs">
+            <input type="password" id="senha" class="inputs" required minlength="8" maxlength="20" autocomplete="new-password">
 
         </p>
 
         <p><label for="confirm">Confirmar Senha:</label>
 
-            <input type="password" id="confirm" class="inputs">
+            <input type="password" id="confirm" class="inputs" required minlength="8" maxlength="20" autocomplete="current-password">
 
         </p>
 
@@ -200,7 +207,8 @@
 
         </p>
 
-        <input type="submit" value="Enviar" id="enviar">
+        <input type="submit" value="Enviar" id="enviar" style="margin-right: 10px;">
+        <input type="reset" value="Limpar" id="enviar">
 
     </form>
 
