@@ -52,7 +52,7 @@
 
         }
 
-        h2.sub{
+        h2.sub, h2{
             
             font-family: 'Playfair Display', serif;
 
@@ -144,11 +144,11 @@
 
     <form action="cadastro.js" autocomplete="on">
 
-        <h2 class="sub">Dados Pessoais</h2>
+        <h2 class="sub" style="text-align: center;">Dados Pessoais</h2>
 
         <p class="paragrafos"><label for="nome">Nome Completo:</label> 
             
-            <input type="text" id="nome" class="inputs" minlength="5" maxlength="20" placeholder="Nome de Usuário" required autocomplete="name">
+            <input type="text" id="nome" class="inputs" minlength="5" maxlength="40" placeholder="Nome de Usuário" required autocomplete="name">
         
         </p>
 
@@ -158,26 +158,39 @@
         
         </p>
 
-        <p class="paragrafos"><label for="genero">Gênero:</label> 
-            
-            <input type="text" id="genero" class="inputs" style="margin-bottom: -15px;" placeholder="Masculino, Feminino, Outro..." autocomplete="sex">
-
-            <div id="informar"><input type="checkbox" name="naoinfo" id="inaoinfo"> Prefiro não informar.</div>
-            
+        <p class="paragrafos"><label for="icidade">Cidade:</label>
         
+            <input type="text" class="inputs" name="cidade" id="icidade" required autocomplete="address-level2" minlength="3" maxlength="50" placeholder="São Paulo">
+
+        </p>
+
+        <p class="paragrafos"><label for="sexo" style="margin-bottom: 10px;">Gênero</label> <br>
+            
+            <input type="radio" name="sexo" id="imasculino" value="M" required> 
+            <label for="imasculino" style="font-size: 16px;">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="ifeminino" value="F" required> 
+            <label for="ifeminino" style="font-size: 16px;">Feminino</label> <br>
+
+            <input type="radio" name="sexo" id="ioutro" value="O" required>
+            <label for="ioutro" style="font-size: 16px;">Outro</label> <br>
+
+            <input type="radio" name="sexo" id="inao_dizer" value="N" required>
+            <label for="inao_dizer" style="font-size: 16px;">Prefiro não informar</label>
+
         </p>
 
         <h2 class="sub">Contato</h2>
 
         <p class="paragrafos"><label for="email">Email:</label> 
             
-            <input type="email" id="email" class="inputs" required autocomplete="email">
+            <input type="email" id="email" class="inputs" required autocomplete="email" maxlength="100" placeholder="seu.email@exemplo.com" pattern="^\@\{5}+.\{3}$">
         
         </p>
 
         <p class="paragrafos"><label for="telefone">Telefone:</label> 
             
-            <input type="tel" id="telefone" class="inputs" required autocomplete="tel">
+            <input type="tel" id="telefone" class="inputs" required autocomplete="tel" pattern="^\(\d{2}\)\d{2} \d{4,5}-\d{4}$" placeholder="(xx)xx xxxxx xxxxx" value="(xx)xx xxxxx-xxxx">
         
         </p>
 
@@ -191,13 +204,13 @@
 
         <p><label for="senha">Senha:</label>
 
-            <input type="password" id="senha" class="inputs" required minlength="8" maxlength="20" autocomplete="new-password">
+            <input type="password" name="senha" id="isenha" class="inputs" required minlength="8" maxlength="20" autocomplete="new-password">
 
         </p>
 
         <p><label for="confirm">Confirmar Senha:</label>
 
-            <input type="password" id="confirm" class="inputs" required minlength="8" maxlength="20" autocomplete="current-password">
+            <input type="password" name="senha" id="iconfirm" class="inputs" required minlength="8" maxlength="20" autocomplete="current-password">
 
         </p>
 
