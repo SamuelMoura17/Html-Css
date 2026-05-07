@@ -58,15 +58,20 @@
 
             color: #333333;
 
-            margin: 30px 0 30px 0;
+            margin: 35px 0 35px 0;
 
             font-size: 30px;
 
+            text-align: center;
+
         }
+
         
         p.paragrafos{
 
             font-size: 20px;
+
+            margin: 10px;
 
         }
 
@@ -142,9 +147,9 @@
     
     <h1>Formulário de Cadastro de Usuário</h1>
 
-    <form action="cadastro.js" autocomplete="on">
+    <form action="cadastro.js" autocomplete="on" method="POST">
 
-        <h2 class="sub" style="text-align: center;">Dados Pessoais</h2>
+        <h2 class="sub">Dados Pessoais</h2>
 
         <p class="paragrafos"><label for="nome">Nome Completo:</label> 
             
@@ -154,28 +159,112 @@
 
         <p class="paragrafos"><label for="data">Data de Nascimento:</label> 
             
-            <input type="date" id="data" class="inputs" min="1900-01-01" max="2026-04-26" required>
+            <input type="date" id="data" class="inputs" min="1900-01-01" max="2026-04-26" required auytocomplete="bday">
         
         </p>
 
-        <p class="paragrafos"><label for="icidade">Cidade:</label>
+        <p class="paragrafos"><label for="icidade" style="margin-bottom: 20px; margin-top: 20px;">Estado:</label>
         
-            <input type="text" class="inputs" name="cidade" id="icidade" required autocomplete="address-level2" minlength="3" maxlength="50" placeholder="São Paulo">
+            <select name="cidade" id="icidade" class="inputs" required>
+
+                <option value="">Escolha uma opção</option>
+
+                <optgroup label="Norte">
+
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+
+                </optgroup>
+
+                <optgroup label="Nordeste">
+
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+
+                </optgroup>
+
+                <optgroup label="Centro-Oeste">
+
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+
+                </optgroup>
+
+                <optgroup label="Sudeste">
+
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+
+                </optgroup>   
+
+                <optgroup label="Sul">
+
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+
+                </optgroup>
+
+            </select>
+
+            <p class="paragrafos"><label for="iprofi" style="margin-bottom: 20px;">Profissão:</label>
+
+                <input type="text" name="profi" id="iprofi" list="iprofissao" class="inputs" placeholder="Digite sua profissão" required autocomplete="organization-title">
+            
+                <datalist id="iprofissao">
+
+                    <option value="Programador">
+                    <option value="Designer">
+                    <option value="Analista">
+                    <option value="Gerente">
+                    <option value="Engenheiro">
+                    <option value="Médico">
+                    <option value="Professor">
+                    <option value="Advogado">
+                    <option value="Arquiteto">
+                    <option value="Jornalista">
+                    <option value="Psicólogo"> 
+                    <option value="Dentista">
+                    <option value="Veterinário">
+                    <option value="Farmacêutico">
+                    <option value="Contador">
+                    <option value="Publicitário">
+                    <option value="Consultor">  
+
+                </datalist>
+            
+            </p>
 
         </p>
 
         <p class="paragrafos"><label for="sexo" style="margin-bottom: 10px;">Gênero</label> <br>
             
-            <input type="radio" name="sexo" id="imasculino" value="M" required> 
+            <input type="radio" name="sexo" id="imasculino" value="M" required autocomplete="sex"> 
             <label for="imasculino" style="font-size: 16px;">Masculino</label> <br>
 
-            <input type="radio" name="sexo" id="ifeminino" value="F" required> 
+            <input type="radio" name="sexo" id="ifeminino" value="F" required autocomplete="sex">
             <label for="ifeminino" style="font-size: 16px;">Feminino</label> <br>
 
-            <input type="radio" name="sexo" id="ioutro" value="O" required>
+            <input type="radio" name="sexo" id="ioutro" value="O" required autocomplete="sex">
             <label for="ioutro" style="font-size: 16px;">Outro</label> <br>
 
-            <input type="radio" name="sexo" id="inao_dizer" value="N" required>
+            <input type="radio" name="sexo" id="inao_dizer" value="N" required autocomplete="sex">
             <label for="inao_dizer" style="font-size: 16px;">Prefiro não informar</label>
 
         </p>
@@ -211,6 +300,55 @@
         <p><label for="confirm">Confirmar Senha:</label>
 
             <input type="password" name="senha" id="iconfirm" class="inputs" required minlength="8" maxlength="20" autocomplete="current-password">
+
+        </p>
+
+        <h2 class="Sub">Feedback</h2>
+
+        <p>
+
+            <textarea name="msg" id="imsg" placeholder="Digite seu Feedback aqui....." rows="8" cols="120" required></textarea>
+
+        </p>
+
+        <p><label for="inivel">Nível de satisfação:</label>
+        
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="5" oninput="out.innerHTML = Number(inivel.value)" required> 
+
+            <label for="out"></label>
+            <output id="out">5</output>
+            
+        </p>
+
+        <h2 class="sub">Adicionais</h2>
+
+        <p><label for="in1">Digite o Primeiro Número: </label>
+        
+            <input type="number" name="n1" id="in1" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" placeholder="Digite um número" required>
+            
+        </p>
+
+        <p>
+
+            <label for="in2">Digite o Segundo Número: </label>
+            
+            <input type="number" name="n2" id="in2" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" placeholder="Digite outro número">
+
+        </p>
+
+        <p>
+
+            <label for="isoma">A soma é: </label>
+
+            <output id="isoma">0</output>
+
+        </p>
+
+        <p style="margin-bottom: 30px;">
+
+            <label for="isub">A subtração é: </label>
+
+            <output id="isub">0</output>
 
         </p>
 
