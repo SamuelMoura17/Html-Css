@@ -12,12 +12,16 @@
     <form action="cadastro.js" method="get">
 
         <p>
-            
-            <label for="inumero">Nível de Satisfação: </label>
 
-            <input type="range" name="numero" id="inumero" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inumero.value)">
+            <label for="iano">Em qual ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2026" required>
 
-            <output id="ival">5</output>
+        </p>
+
+        <p>
+
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
 
         </p>
 
