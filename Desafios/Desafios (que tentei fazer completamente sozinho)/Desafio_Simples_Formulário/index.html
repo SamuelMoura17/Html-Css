@@ -55,14 +55,21 @@
         h2.sub, h2{
             
             font-family: 'Playfair Display', serif;
+            font-size: 30px;
 
             color: #333333;
 
             margin: 35px 0 35px 0;
 
-            font-size: 30px;
-
             text-align: center;
+
+        }
+
+        h3{
+
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
 
         }
 
@@ -93,7 +100,7 @@
             margin: 15px auto 5px auto;
             padding: 7px;
 
-        }
+        }    
 
         div#informar{
 
@@ -104,6 +111,7 @@
             margin-left: clamp(5px, 4%, 100px);
 
         }
+
 
         input#enviar{
 
@@ -162,6 +170,22 @@
             <input type="date" id="data" class="inputs" min="1900-01-01" max="2026-04-26" required auytocomplete="bday">
         
         </p>
+
+        <h3>Calculando idade</h3>
+
+        <p>
+
+            <label for="iano">Ano de Nascimento:</label>
+
+            <input type="number" name="ano" id="iano" min="1900" max="2026" required oninput="calcIdade()">
+            
+            <label for="iidade">Sua idade esse ano é: </label>
+
+            <output id="iidade">0</output>
+
+
+        </p>
+
 
         <p class="paragrafos"><label for="icidade" style="margin-bottom: 20px; margin-top: 20px;">Estado:</label>
         
@@ -344,13 +368,6 @@
 
         </p>
 
-        <p style="margin-bottom: 30px;">
-
-            <label for="isub">A subtração é: </label>
-
-            <output id="isub">0</output>
-
-        </p>
 
         <p class="paragrafos"><label for="aceito">Aceito os termos de uso</label>
 
@@ -362,6 +379,17 @@
         <input type="reset" value="Limpar" id="enviar">
 
     </form>
+
+    <script>
+
+        function calcIdade(){
+
+            let anoAtual = new Date().getFullYear();
+            iidade.innerHTML = Number(anoAtual) - Number(iano.value);
+
+        }
+
+    </script>
 
 </body>
 </html>
