@@ -2,47 +2,193 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meus estudos HTML e CSS</title>
   <style>
-    body{
-      background-color: #e3f2fd;
 
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*Fonte Bebas Neue*/
 
-      text-align: center;
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); /*Fonte Nunito*/
+
+    :root{
+
+      ---fonte_h1: "Bebas Neue", sans-serif;
+      ---fonte_h2: "Nunito", sans-serif;
+
     }
 
+    *{
+
+      padding: 0;
+      margin: 0;
+
+    }
+
+    body{
+
+      background-color: white;
+
+    }
+
+    header{
+
+      background: black url('fundo.png') center center no-repeat fixed;
+      background-size: cover;
+
+      display: flex;
+
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      min-height: clamp(250px, 35vh, 500px);
+
+      flex-direction: column;
+
+      margin-bottom: 60px;
+
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+    }
+
+
     h1{
-        font-size: 3.5em;
-      text-shadow: 0.5px 0.5px 3px black;
+
+      font-size: 50px;
+      font-family: var(---fonte_h1);
+
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+
+      color: white;
+
+      align-items: center;
+      text-align: center;
+
     }
 
     p{
-      font-size: 2.5em;
+
+      font-size: 40px;
       font-weight: bold;
+      font-family: var(---fonte_h1);
+
+      color: white;
+      
+      align-items: center;
+      text-align: center;
+
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+
     }
 
-    img{
-      width: 40%;
-      height: 400%;
-      border-radius: 10px;
-      box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.432);
-      margin: 10px;
+    main{
+
+      font-family: var(---fonte_h2);
+
+      display: flex;
+
     }
 
-    a:hover{
-      width: 50%;
-      height: 500%;
+    div.card{
+
+      position: relative;
+
+      justify-content: center;
+      align-items: center;
+
+      margin: auto;
+
     }
+
+    div.card > a > h2{
+
+      position: absolute;
+
+      top: 290px;
+      left: 20px;
+
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+
+      border-radius: 8px;
+
+      padding: 2px 6px;
+
+      font-family: var(---fonte_h2);
+      font-size: clamp(20px, 2em, 40px);
+
+    }
+
+    div.card img{
+
+      width: 400px;
+      height: 350px;
+
+      border-radius: 15px;
+
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+    }
+
+    div.card img:hover{
+
+      transition: 0.3s;
+
+      width: 420px;
+      height: 360px;
+
+      box-shadow: 0 12px 32px rgba(30, 100, 255, 0.6);
+
+      transform: translateY(-6px);
+
+    }
+
+    footer{
+
+      background-color: lightgray;
+
+    }
+
   </style>
 </head>
 <body>
-  <h1>🚀 Repositório do Curso de Html e Css</h1>
 
-  <p>Samuel Moura Souza!</p>
+  <header>
+
+    <h1>Repositório do Curso de Html e Css</h1>
+
+    <p>Samuel Moura Souza!</p>
+
+  </header>
   
-  <a href="Desafios/index.html"><img src="Desafios Html e Css.png" alt="Desafios"></a>
+  <main>
 
-  <a href="Exercícios/index.html"><img src="Exercícios Html e Css.png" alt="Exercícios"></a>
+    <div class="card">
+
+      <a href="Desafios/index.html">
+        
+        <img src="Desafios Html e Css.png" alt="Desafios">
+
+        <h2>Desafios</h2>
+
+      </a>
+
+    </div>
+
+    <div class="card">
+
+      <a href="Exercícios/index.html">
+        
+        <img src="Exercícios Html e Css.png" alt="Exercícios">
+    
+
+        <h2>Exercícios</h2>
+
+      </a>
+
+    </div>
+
+  </main>
+  
 </body>
 </html>
