@@ -87,7 +87,6 @@
 
       display: flex;
 
-      flex-wrap: wrap;
 
       justify-content: center;
 
@@ -129,7 +128,7 @@
 
     div.card img{
 
-      width: 400px;
+      width: clamp(300px, 40vw, 500px);
       height: 350px;
 
       border-radius: 15px;
@@ -142,7 +141,7 @@
 
       transition: 0.3s;
 
-      width: clamp(300px, 40vw, 500px);
+      width: clamp(306px, 40.8vw, 510px);
       height: 360px;
 
       box-shadow: 0 12px 32px rgba(30, 100, 255, 0.6);
