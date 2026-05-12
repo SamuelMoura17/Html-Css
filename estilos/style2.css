@@ -20,13 +20,13 @@
 
     body{
 
-        background-color: white;
+        background-color: #f8f9fa;
 
     }
 
-    header{
+header{
 
-        background: black url('/imagens/fundo.png')  center center no-repeat fixed;
+        background: black url('../imagens/fundo.png')  center center no-repeat fixed;
         background-size: cover;
 
         display: flex;
@@ -79,73 +79,53 @@
 
         font-family: var(---fonte_h2);
 
-        display: flex;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 24px;
-
-        padding: 40px 20px;
-
     }
 
-    div.card{
+    div#container{
 
-        position: relative;
-
-        justify-content: center;
-        align-items: center;
+        text-align: center;
 
         margin: auto;
 
-    }   
-    div.card > a > h2{
+    }
 
-        position: absolute;
+    ul{
 
-        top: 470px;
-        left: 15px;
+        list-style: none;
 
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-
-        border-radius: 8px;
-
-        padding: 2px 6px;
-
-        font-family: var(---fonte_h2);
-        font-size: clamp(20px, 2em, 40px);
+        padding: 0;
 
     }
 
-    div.card img{
+    li{
 
-        width: clamp(300px, 550px, 800px);
-        height: clamp(300px, 550px, 800px);
+        background-color: #e8f0fe;
 
-        border-radius: 15px;
+        width: 400px;
 
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        margin: 30px auto;
 
-    }
+        border-left: 4px solid #185FA5;
 
-    div.card img:hover{
+        padding: 20px;
 
-        transition: 0.3s;
-
-        width: clamp(306px, 555px, 810px);
-        height: clamp(310px, 560px, 810px);
-
-        box-shadow: 0 12px 32px rgba(30, 100, 255, 0.6);
-
-        transform: translateY(-6px);
+        border-radius: 20px;
 
     }
 
-    footer{
+    li#desab{
 
-        background-color: lightgray;
+        color: #aaa;
+        border-left-color: #ccc;
+
+        background: #f1f3f5;
+
+    }
+
+    div#container > ul > a{
+
+        text-decoration: none;
+
+        color: #185FA5;
 
     }
