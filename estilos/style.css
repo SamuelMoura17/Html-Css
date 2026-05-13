@@ -48,7 +48,7 @@
 
     h1{
 
-        font-size: 60px;
+        font-size: clamp(30px, 50px, 60px);
         font-family: var(---fonte_h1);
 
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
@@ -85,7 +85,7 @@
 
         justify-content: center;
 
-        gap: 24px;
+        gap: 20px;
 
         padding: 40px 20px;
 
@@ -105,7 +105,7 @@
 
         position: absolute;
 
-        top: 470px;
+        top: 285px;
         left: 15px;
 
         background: rgba(0, 0, 0, 0.6);
@@ -116,14 +116,14 @@
         padding: 2px 6px;
 
         font-family: var(---fonte_h2);
-        font-size: clamp(20px, 2em, 40px);
+        font-size: clamp(20px, 1.8em, 40px);
 
     }
 
     div.card img{
 
-        width: clamp(300px, 550px, 800px);
-        height: clamp(300px, 550px, 800px);
+        width: 400px;
+        height: 350px;
 
         border-radius: 15px;
 
@@ -133,10 +133,10 @@
 
     div.card img:hover{
 
-        transition: 0.3s;
+        transition: 0.5s;
 
-        width: clamp(306px, 555px, 810px);
-        height: clamp(310px, 560px, 810px);
+        width: 420px;
+        height: 370px;
 
         box-shadow: 0 12px 32px rgba(30, 100, 255, 0.6);
 
