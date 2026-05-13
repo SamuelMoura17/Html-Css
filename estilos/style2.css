@@ -48,7 +48,7 @@
 
     h1{
 
-        font-size: 60px;
+        font-size: clamp(30px, 5.5vw, 65px);
         font-family: var(--fonte_h1);
 
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
@@ -62,7 +62,7 @@
 
     p{
 
-        font-size: 40px;
+        font-size: clamp(17px, 2.8vw, 36px);
         font-weight: bold;
         font-family: var(--fonte_h1);
 
@@ -101,7 +101,7 @@
 
         background-color: #e8f0fe;
 
-        width: 500px;
+        width: clamp(280px, 80vw, 500px);
 
         margin: 40px auto;
 
@@ -121,7 +121,7 @@
 
         transform: translateY(-6px);
 
-        width: 520px;
+        width: clamp(290px, 83vw, 520px);
 
         background-color: #185FA5;
         color: white;
