@@ -20,8 +20,8 @@
 
         <p>
 
-            <label for="iidade">Sua idade é: </label>
-            <output id="iidade">0</output>
+            <label for="iidade">Você tem ou vai fazer: </label>
+            <output id="iidade">0 </output> anos
 
         </p>
 
@@ -36,7 +36,13 @@
 
     <script>
 
-        
+    function calcIdade() {
+
+        let atual = new Date().getFullYear()
+
+        iidade.innerHTML = Number(atual) - Number(iano.value)
+
+    }
 
     </script>
 
