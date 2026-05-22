@@ -2,6 +2,12 @@
 
 /* Configurações Gerais */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+/* Fonte Cormorant Garamond - font-family: "Cormorant Garamond", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fonte Inter - font-family: "Inter", sans-serif; */
+
 *{
 
     margin: 0px;
@@ -11,6 +17,35 @@
 
 body{
 
-    background: ;
+    height: 100vh;
+
+    background: black url('../imagens/ilke-yazgan-a8b6zP1wEDQ-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+h1#h1{
+
+    text-align: center;
+
+    padding: 10px;
+
+    color: aliceblue;
+
+    font-family: "Cormorant Garamond", serif;
+
+}
+
+strong{
+
+    color: #6BAF7A;
+
+}
+
+label, input{
+
+    font-family: "Inter", sans-serif;
+
+    color: black;
 
 }
