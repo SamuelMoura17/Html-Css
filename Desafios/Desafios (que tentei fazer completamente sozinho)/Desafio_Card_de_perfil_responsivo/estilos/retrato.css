@@ -23,27 +23,44 @@ div#container{
 
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 
+    padding: 10px 40px 30px 40px;
+
 }
 
 h1#h1{
 
-    font-size: 30px;
+    font-size: 40px;
+
+    padding: 10px;
+
+}
+
+div#contfoto > img{
+
+    width: 140px;
+    height: 140px;
+
+    position: absolute;
+
+    top: 15%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+input.imput{
+
+    width: 80%;
+
+    background-color: rgb(1, 24, 1);
 
     padding: 20px;
 
 }
 
-label{
-
-    font-size: 25px;
-
-    padding: 15px;
-
-}
-
 form{
 
-    background-color: white;
 
     width: 90%;
 
@@ -51,21 +68,12 @@ form{
 
     border-radius: 10px;
 
-    position: absolute;
-
-    bottom: 10%;
-    left: 50%;
-
-    transform: translateX(-50%);
-
 }
 
 input{
 
     display: block;
 
-    width: 90%;
-    height: 40px;
 
     border-radius: 8px;
 

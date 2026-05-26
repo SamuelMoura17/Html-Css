@@ -20,21 +20,42 @@
 
             <div id="contfoto">
 
+                <img src="imagens/logo-ecoviva.png" alt="Logo ecoviva">
 
             </div>
 
             <form action="cadastro.js" method="get">
 
-                <label for="iemail">Email: </label>
+                <div class="posi">
 
-                <input type="text" name="email" id="iemail" placeholder="Digite seu email" required> <br>
+                    <label for="iemail">Email: </label>
 
-                <label for="isenha">Senha: </label>
+                    <input type="text" name="email" id="iemail" placeholder="Digite seu email" required class="imput">
 
-                <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required>
+                </div class="posi">
 
-            </form>            
+                <div class="posi">
+
+                    <label for="isenha">Senha: </label>
+
+                    <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required class="imput" style="margin-bottom: 50px;">
+
+                    <p id="esqueceu">
+                        
+                        <a href="https://www.google.com/search?client=opera-gx&q=se+lascou&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank" rel="external">Esqueceu sua senha?</a>
+                    
+                    </p>
+
+                </div>
+
+                <div id="inputenv">
+
+                    <input type="submit" value="Entrar">    
             
+                </div>
+
+            </form>  
+
         </div>
 
     </main>
