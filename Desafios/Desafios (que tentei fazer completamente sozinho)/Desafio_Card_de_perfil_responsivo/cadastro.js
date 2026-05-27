@@ -1,1 +1,1 @@
-console.log("Informações enviadas com sucesso!");
+Informações enviadas com sucesso!

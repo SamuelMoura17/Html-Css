@@ -42,11 +42,19 @@ strong{
 
 }
 
+strong:hover{
+
+    color: #fff;
+
+}
+
 div#contfoto > img{
 
     border-radius: 50%;
 
     background-color: transparent;
+
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
 
 }
 
@@ -71,6 +79,14 @@ p#esqueceu{
 
 }
 
+a:hover{
+
+    color: #fff;
+
+    text-decoration: underline;
+
+}
+
 a{
 
     color: #6BAF7A;;
@@ -81,14 +97,37 @@ a{
 
 }
 
+
+
+hr{
+
+    width: 69%;
+    height: 0.8px;
+
+    border: 0.5px solid #6BAF7A;
+
+    background-color: #6BAF7A;
+
+    position: absolute;
+
+    bottom: -2%;
+
+}
+
 div#inputenv > input{
 
-    width: 73%;
+    box-shadow: 0 4px 15px rgba(0, 150, 0, 0.4);
 
-    border-radius: 15px;
+}
 
-    background-color: #6BAF7A;;
+div#inputenv > input:hover{
 
-    padding: 20px;
+    background-color: #3a9e3a;
+
+    transition: background-color 0.3s;
+
+    cursor: pointer;    
+
+    box-shadow: 0 6px 20px rgba(0, 150, 0, 0.6);
 
 }
