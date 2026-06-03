@@ -1,3 +1,129 @@
 @charset "UTF-8";
 
 /* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+-----------------------------------
+
+Pequenas telas: até 600px
+Celular: de 600px a 768px
+Tablet: de 768px a 992px
+Desktop: de 992px a 1200px
+Grandes telas: 1200px ou mais
+
+*/
+
+@media print {
+    /* Configuração para impressão */
+
+    *{
+
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    body{
+
+        background-image: url(../imagens/back-print.jpg);
+
+    }
+
+    main{
+
+        width: 90vw;
+
+        border: 2px solid black;
+
+    }
+
+    main::after{
+
+        content: 'Essa impressão foi feita através de um estudante do curso em video do Gustavo Guanabara';
+
+        text-decoration: overline;
+
+    }
+
+    main h1{
+
+        color: black;
+
+        text-shadow: none;
+
+    }
+
+    img#phone{ display: none; }
+
+    img#tablet{ display: none; }
+
+    img#impressora{ display: block; }
+
+    img#pc{ display: none; }
+
+    img#tv{ display: none; }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Configuração para tablets */
+    
+    body{ 
+
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+
+    img#phone{ display: none; }
+
+    img#tablet{ display: block; }
+
+    img#impressora{ display: none; }
+
+    img#pc{ display: none; }
+
+    img#tv{ display: none; }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /* Configuração para desktops */
+    
+    body{
+
+        background-image: url(../imagens/back-pc.jpg);
+
+    }
+
+    img#phone{ display: none; }
+
+    img#tablet{ display: none; }
+
+    img#impressora{ display: none; }
+
+    img#pc{ display: block; }
+
+    img#tv{ display: none; }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    /* Configuração para grandes telas */
+
+    body{
+
+        background-image: url(../imagens/back-tv.jpg);
+
+    }
+
+    img#phone{ display: none; }
+
+    img#tablet{ display: none; }
+
+    img#impressora{ display: none; }
+
+    img#pc{ display: none; }
+
+    img#tv{ display: block; }
+    
+}
+    
