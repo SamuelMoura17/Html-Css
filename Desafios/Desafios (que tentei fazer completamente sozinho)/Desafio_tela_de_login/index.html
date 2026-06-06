@@ -3,11 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/mobile_first.css" media="(max-width: 768px)">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <title>Tela de Login</title>
 </head>
 <body>
     
+    <main>
+
+        <div id="container"> 
+                
+                <div>
+                    
+                    <img src="imagens/predio.jpg" alt="Imagem de um prédio" id="imagem">
+                
+                </div>
+
+            <h2>Login</h2>
+
+            <div>
+
+                <p>Seja bem-vindo(a) novamente. Faça <br>login para acessar sua conta e poder <br> fazer as configurações no seu ambiente.</p>
+
+            </div>
+
+            <form action="cadastro.js" method="get">
+
+                <div class="campo">
+
+                    <label for="iemail">
+                        
+                        <span class="material-symbols-outlined">
+
+                            contacts_product
+
+                        </span>
+
+                    </label>
+
+                    <input type="email" name="email" id="iemail" placeholder="Seu email">
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="isenha">
+
+                        <span class="material-symbols-outlined">
+
+                            key
+
+                        </span>
+                        
+                    </label>
+                    
+                    <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
 </body>
 </html>
