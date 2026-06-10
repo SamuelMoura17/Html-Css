@@ -6,14 +6,437 @@
 
     /* Estilo para telas médias (Tablet) */
 
+*{
 
-    
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+body{
+
+    min-height: 100vh;
+
+    background-image: linear-gradient(to top, #49a09d, #5f2c82)
+
+}
+
+div#container{
+
+    transition: all 0.3s;
+
+    width: 76vw;
+    height: 36vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+}
+
+div#container  img{
+
+    transition: all 0.3s;
+
+    width: 24vw;
+    height: 40.4vh;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+div#container h2{
+
+    font-size: 32px;
+
+    text-align: center;
+    
+    margin: 10px 0px 40px 0px;
+
+    position: absolute;
+
+    top: -5px;
+    left: 58%;
+
+}
+
+div#container p{
+
+    width: 50vw;
+
+    position: absolute;
+
+    top: 15%;
+    left: 32%;
+
+    margin-top: 13px;
+
+    font-size: 13px;
+
+    text-align: center;
+    text-align: justify;
+
+}
+
+form{
+
+    position: absolute;
+
+    bottom: 29%;
+    left: 65%;
+
+    transform: translateX(-50%);
+
+
+}
+
+label{
+
+    width: 51vw;
+    height: 25px;
+
+    padding: 8px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    background-color: #5F2C82;
+    color: white;
+
+    margin: 10px 10px 10px 10px;
+
+
+}
+
+input{
+
+    padding: 11px;
+
+    border-radius: 10px;
+
+    background-color: #94CFCD;
+    color: white;
+
+}
+
+input#iemail{
+
+    position: absolute;
+
+    top: 11px;
+    left: 5.4vw;
+
+    height: 13px;
+    width: 45.3vw;
+
+}
+
+input#isenha{
+
+    position: absolute;
+
+    top: 62px;
+    left: 5.5vw;
+
+    height: 13px;
+    width: 45.2vw;
+
+}
+
+input#env{
+
+    color: white;
+    background-color: #53AAA7;
+
+    font-weight: bold;
+
+    width: 53vw;
+    height: 40px;
+
+    position: absolute;
+
+    top: 95%;
+    left: 50%;
+    
+    transform: translateX(-50%);
+
+}
+
+input#env:hover{
+
+    background-color: #2D6462;
+
+}
+
+input#esq{
+
+    background-color: white;
+    color: #53AAA7;
+
+    font-weight: bold;
+
+    border: 1px solid #5c8382;
+
+    position: absolute;
+
+    top: 134%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 53vw;
+    height: 40px;
+
+}
+
+input#esq:hover{
+
+    background-color: #6CD3CF;
+    color: white;
+
+}
+
+}
+
+@media screen and (min-width: 993px) {
 
     /* Estilo para telas grandes (Desktop) */
 
+    *{
 
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+
+    min-height: 100vh;
+
+    background-image: linear-gradient(to top, #5f2c82, #49a09d)
+
+}
+
+div#container{
+
+    transition: all 0.3s;
+
+    width: 76vw;
+    height: 36vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+}
+
+div#container  img{
+
+    transition: all 0.3s;
+
+    width: 24vw;
+    height: 40.4vh;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+div#container h2{
+
+    font-size: 32px;
+
+    text-align: center;
+    
+    margin: 10px 0px 40px 0px;
+
+    position: absolute;
+
+    top: -5px;
+    left: 58%;
+
+}
+
+div#container p{
+
+    width: 50vw;
+
+    position: absolute;
+
+    top: 15%;
+    left: 32%;
+
+    margin-top: 13px;
+
+    font-size: 13px;
+
+    text-align: center;
+    text-align: justify;
+
+}
+
+form{
+
+    position: absolute;
+
+    bottom: 29%;
+    left: 65%;
+
+    transform: translateX(-50%);
+
+
+}
+
+label{
+
+    width: 51vw;
+    height: 25px;
+
+    padding: 8px;
+
+    border-radius: 10px;
+
+    display: block;
+
+    background-color: #5F2C82;
+    color: white;
+
+    margin: 10px 10px 10px 10px;
+
+
+}
+
+input{
+
+    padding: 11px;
+
+    border-radius: 10px;
+
+    background-color: #94CFCD;
+    color: white;
+
+}
+
+input#iemail{
+
+    position: absolute;
+
+    top: 11px;
+    left: 5.4vw;
+
+    height: 13px;
+    width: 45.3vw;
+
+}
+
+input#isenha{
+
+    position: absolute;
+
+    top: 62px;
+    left: 5.5vw;
+
+    height: 13px;
+    width: 45.2vw;
+
+}
+
+input#env{
+
+    color: white;
+    background-color: #53AAA7;
+
+    font-weight: bold;
+
+    width: 53vw;
+    height: 40px;
+
+    position: absolute;
+
+    top: 95%;
+    left: 50%;
+    
+    transform: translateX(-50%);
+
+}
+
+input#env:hover{
+
+    background-color: #2D6462;
+
+}
+
+input#esq{
+
+    background-color: white;
+    color: #53AAA7;
+
+    font-weight: bold;
+
+    border: 1px solid #5c8382;
+
+    position: absolute;
+
+    top: 134%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 53vw;
+    height: 40px;
+
+}
+
+input#esq:hover{
+
+    background-color: #6CD3CF;
+    color: white;
+
+}
     
 }
+

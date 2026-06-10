@@ -1,1 +1,1 @@
-console.log("Você entrou!")
+Você entrou!
