@@ -25,10 +25,10 @@ body{
 
 div#container{
 
-    transition: all 0.3s;
+    transition: all 0.5s;
 
     width: 76vw;
-    height: 36vh;
+    height: 248px;
 
     display: flex;
 
@@ -52,10 +52,10 @@ div#container{
 
 div#container  img{
 
-    transition: all 0.3s;
+    transition: all 0.5s;
 
     width: 24vw;
-    height: 40.4vh;
+    height: 279px;
 
     position: absolute;
 
@@ -68,6 +68,8 @@ div#container  img{
 }
 
 div#container h2{
+
+    transition: all 0.5s;
 
     font-size: 32px;
 
@@ -83,6 +85,8 @@ div#container h2{
 }
 
 div#container p{
+
+    transition: all 0.5;
 
     width: 50vw;
 
@@ -102,6 +106,8 @@ div#container p{
 
 form{
 
+    transition: all 0.5s;
+
     position: absolute;
 
     bottom: 29%;
@@ -113,6 +119,8 @@ form{
 }
 
 label{
+
+    transition: all 0.5s;
 
     width: 51vw;
     height: 25px;
@@ -133,6 +141,8 @@ label{
 
 input{
 
+    transition: all 0.5s;
+
     padding: 11px;
 
     border-radius: 10px;
@@ -143,6 +153,8 @@ input{
 }
 
 input#iemail{
+
+    transition: all 0.5s;
 
     position: absolute;
 
@@ -156,6 +168,8 @@ input#iemail{
 
 input#isenha{
 
+    transition: all 0.5s;
+
     position: absolute;
 
     top: 62px;
@@ -167,6 +181,8 @@ input#isenha{
 }
 
 input#env{
+
+    transition: all 0.5s;
 
     color: white;
     background-color: #53AAA7;
@@ -192,6 +208,8 @@ input#env:hover{
 }
 
 input#esq{
+
+    transition: all 0.5s;
 
     background-color: white;
     color: #53AAA7;
@@ -244,10 +262,10 @@ body{
 
 div#container{
 
-    transition: all 0.3s;
+    transition: all 0.5s;
 
-    width: 76vw;
-    height: 36vh;
+    width: 69vw;
+    height: 45vh;
 
     display: flex;
 
@@ -271,22 +289,24 @@ div#container{
 
 div#container  img{
 
-    transition: all 0.3s;
+    transition: all 0.5s;
 
-    width: 24vw;
-    height: 40.4vh;
+    width: 36vw;
+    height: 49.4vh;
 
     position: absolute;
 
     top: 0;
-    left: 0;
+    right: 0;
 
 
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 0px 20px 20px 0px;
 
 }
 
 div#container h2{
+
+    transition: all 0.5s;
 
     font-size: 32px;
 
@@ -297,22 +317,24 @@ div#container h2{
     position: absolute;
 
     top: -5px;
-    left: 58%;
+    left: 20%;
 
 }
 
 div#container p{
 
-    width: 50vw;
+    transition: all 0.5s;
+
+    width: 33.5vw;
 
     position: absolute;
 
-    top: 15%;
-    left: 32%;
+    top: 16%;
+    left: 1%;
 
     margin-top: 13px;
 
-    font-size: 13px;
+    font-size: 16px;
 
     text-align: center;
     text-align: justify;
@@ -321,10 +343,12 @@ div#container p{
 
 form{
 
+    transition: all 0.5s;
+
     position: absolute;
 
     bottom: 29%;
-    left: 65%;
+    left: 35%;
 
     transform: translateX(-50%);
 
@@ -333,7 +357,9 @@ form{
 
 label{
 
-    width: 51vw;
+    transition: all 0.5s;
+
+    width: 32.5vw;
     height: 25px;
 
     padding: 8px;
@@ -345,12 +371,14 @@ label{
     background-color: #5F2C82;
     color: white;
 
-    margin: 10px 10px 10px 10px;
+    margin: 10px 15.2vw 10px 10px;
 
 
 }
 
 input{
+
+    transition: all 0.5s;
 
     padding: 11px;
 
@@ -363,44 +391,49 @@ input{
 
 input#iemail{
 
+    transition: all 0.5s;
+
     position: absolute;
 
     top: 11px;
-    left: 5.4vw;
+    right: 15.4vw;
 
     height: 13px;
-    width: 45.3vw;
+    width: 28vw;
 
 }
 
 input#isenha{
 
+    transition: all 0.5s;
+
     position: absolute;
 
-    top: 62px;
-    left: 5.5vw;
+    top: 62.5px;
+    left: 4.3vw;
 
-    height: 13px;
-    width: 45.2vw;
+    height: 12px;
+    width: 28vw;
 
 }
 
 input#env{
+
+    transition: all 0.5s;
 
     color: white;
     background-color: #53AAA7;
 
     font-weight: bold;
 
-    width: 53vw;
+    width: 34vw;
     height: 40px;
 
     position: absolute;
 
     top: 95%;
-    left: 50%;
+    right: 30.5%;
     
-    transform: translateX(-50%);
 
 }
 
@@ -412,6 +445,8 @@ input#env:hover{
 
 input#esq{
 
+    transition: all 0.5s;
+
     background-color: white;
     color: #53AAA7;
 
@@ -421,12 +456,10 @@ input#esq{
 
     position: absolute;
 
-    top: 134%;
-    left: 50%;
+    top: 137%;
+    right: 30.5%;
 
-    transform: translateX(-50%);
-
-    width: 53vw;
+    width: 33.8vw;
     height: 40px;
 
 }

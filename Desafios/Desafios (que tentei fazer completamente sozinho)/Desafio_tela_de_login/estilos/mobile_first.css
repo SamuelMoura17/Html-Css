@@ -19,7 +19,7 @@ body{
 
 div#container{
 
-    transition: all 0.3;
+    transition: all 0.5;
 
     width: 250px;
     height: 515px;
@@ -46,7 +46,7 @@ div#container{
 
 div#container  img{
 
-    transition: all 0.3s;
+    transition: all 0.5s;
 
     width: 280px;
     height: 200px;
@@ -64,6 +64,7 @@ div#container  img{
 
 div#container h2{
 
+    transition: all 0.5s;
 
     font-size: 32px;
 
@@ -74,6 +75,8 @@ div#container h2{
 }
 
 div#container p{
+
+    transition: all 0.5s;
 
     width: 250px;
 
@@ -94,6 +97,8 @@ div#container p{
 
 form{
 
+    transition: all 0.5s;
+
     position: absolute;
 
     top: 61%;
@@ -105,6 +110,8 @@ form{
 }
 
 label{
+
+    transition: all 0.5s;
 
     width: 240px;
 
@@ -124,6 +131,8 @@ label{
 
 input{
 
+    transition: all 0.5s;
+
     padding: 11px;
 
     width: 190px;
@@ -137,6 +146,8 @@ input{
 
 input#iemail{
 
+    transition: all 0.5s;
+
     position: absolute;
 
     top: 12px;
@@ -148,6 +159,8 @@ input#iemail{
 
 input#isenha{
 
+    transition: all 0.5s;
+
     position: absolute;
 
     top: 66px;
@@ -158,6 +171,8 @@ input#isenha{
 }
 
 input#env{
+
+    transition: all 0.5s;
 
     color: white;
     background-color: #53AAA7;
@@ -182,6 +197,8 @@ input#env:hover{
 }
 
 input#esq{
+
+    transition: all 0.5s;
 
     background-color: white;
     color: #53AAA7;
