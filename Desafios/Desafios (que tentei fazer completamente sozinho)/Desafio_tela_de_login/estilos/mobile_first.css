@@ -42,6 +42,8 @@ div#container{
 
     padding: 15px;
 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
 }   
 
 div#container  img{
@@ -142,6 +144,8 @@ input{
     background-color: #94CFCD;
     color: white;
 
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 input#iemail{
@@ -188,11 +192,15 @@ input#env{
     
     transform: translateX(-50%);
 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
 }
 
 input#env:hover{
 
     background-color: #2D6462;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -216,11 +224,15 @@ input#esq{
 
     width: 259px;
 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 input#esq:hover{
 
     background-color: #6CD3CF;
     color: white;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
 }
