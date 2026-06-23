@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio para praticar FlexBox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
 
         *{
@@ -41,13 +42,25 @@
             width: 35vw;
             height: 35vh;
 
+            padding: 10px;
+
             background-color: rgb(37, 114, 72);
             color: white;
 
             border-radius: 30px;
 
+            flex-flow: column nowrap;
+
             justify-content: center;
             align-items: center;
+            
+
+        }
+
+        div#topo{
+
+            margin-bottom: auto;
+            margin-top: auto;
 
         }
 
@@ -60,11 +73,17 @@
 
             <div id="conteiner">
 
-                <div id="card">
+                    <div id="topo">
+                        
+                        <p><i class="material-icons">person</i> Samuel Moura Souza - 17 anos</p>
+                        
+                    </div>
 
-                    Samuel Moura Souza - 17 anos
+                    <div id="rodape">
 
-                </div>
+                        <p>Cedesp AeB</p>
+
+                    </div>
 
             </div>
 
