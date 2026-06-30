@@ -6,19 +6,58 @@
     <title>Desafio 18</title>
     <style>
 
-        nav#conteiner1{
+        *{
 
-            display: flex;
+            padding: 0px;
+            margin: 0px;
 
-            justify-content: flex-start;
+            box-sizing: border-box;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
 
         }
 
-        li.menu{
+        div#conteudo{
 
-            background-color: antiquewhite;
+            display: flex;
 
+            flex-flow: row nowrap;
 
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .conteiner{
+
+            display: flex;
+
+            padding: 20px;
+
+            margin: 10px;
+
+        }
+
+        nav#navcont > ul {
+
+            display: flex;
+
+            list-style-type: none;
+
+            gap: 10px;
+
+        }
+
+        nav#navcont > ul > li{
+
+            background-color: gray;
+
+            border: 1px solid black;
+
+            padding: 5px;
+
+            border-radius: 5px;
 
         }
 
@@ -26,42 +65,49 @@
 </head>
 <body>
     
-    <header>
+    <div id="conteudo">
 
-        <nav>
+        <header class="conteiner">
 
-            <ul id="conteiner1">
+            <nav id="navcont">
 
-                <li class="menu">A</li>
+                <ul>
 
-                <li class="menu">B</li>
+                    <li>A</li>
+        
+                    <li>B</li>
+        
+                    <li>C</li>
 
-                <li class="menu">C</li>
+                    <li>D</li>
 
-                <li class="menu">D</li>
+                </ul>
 
-            </ul>
+            </nav>
 
+        </header>
 
-        </nav>
+        <main class="conteiner">
 
-    </header>
+            <section>
 
-    <main>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia voluptatibus obcaecati quam assumenda numquam veniam ut, quasi molestiae. Laudantium, accusantium fugit soluta explicabo repellendus consequuntur esse minus placeat perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, ut, atque voluptatem doloribus autem error mollitia enim esse quos consectetur dolore modi qui fugiat. Quam eligendi deleniti ducimus explicabo accusantium!</p>
 
-        <section id="conteiner2">
+            </section>
 
-            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum magni cupiditate soluta unde repudiandae explicabo rerum! Mollitia harum enim ducimus veniam ratione laborum ipsam officia! Ex, a. Quae, iusto dolorum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugit, at, eum voluptas blanditiis distinctio eos beatae, error cupiditate architecto quae laboriosam qui saepe harum soluta aut sunt optio inventore!</p>
+            <aside>
 
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa magnam maxime eaque id possimus! Incidunt harum, ab totam minus modi veniam nesciunt cum omnis perferendis nostrum optio vitae unde assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi soluta saepe facere quia praesentium adipisci, blanditiis tempora incidunt porro. Qui laudantium ipsa ab temporibus expedita quam quia quas inventore rerum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus molestiae corporis alias, dicta architecto ducimus unde pariatur adipisci ad nihil magni aspernatur hic nobis harum labore et cumque suscipit.</p>
 
-        </section>
+            </aside>
 
-    </main>
+        </main>
 
-    <footer id="conteiner3">
+    </div>    
 
-        <p id="footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus velit soluta rem id error. Magni nulla veritatis exercitationem hic temporibus delectus adipisci voluptate. Impedit nobis sint aperiam distinctio, necessitatibus voluptates?</p>
+    <footer class="conteiner">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error enim animi quidem omnis fugit perspiciatis facilis temporibus porro deserunt at exercitationem, quos aliquid tempore. Quo fuga beatae accusamus. Asperiores, nesciunt?</p>
 
     </footer>
 
