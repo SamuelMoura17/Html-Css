@@ -14,6 +14,8 @@
             box-sizing: border-box;
 
             font-family: Georgia, 'Times New Roman', Times, serif;
+            
+            text-align: justify;
 
         }
 
@@ -33,19 +35,27 @@
 
             display: flex;
 
-            padding: 20px;
+            padding: 15px;
 
             margin: 10px;
 
         }
 
+        header#cab{
+
+            background-color: #F5E6D3;
+            color: white;
+
+            border-radius: 20px;
+            border: 3px solid black;
+
+            flex-shrink: 0;
+            
+        }
+
         nav#navcont > ul {
 
-            display: flex;
-
             list-style-type: none;
-
-            gap: 10px;
 
         }
 
@@ -55,9 +65,80 @@
 
             border: 1px solid black;
 
-            padding: 5px;
+            padding: 10px;
 
             border-radius: 5px;
+
+            margin-bottom: 6%;
+
+        }
+
+        main#man{
+
+            flex-grow: 1;
+
+            gap: 30px;
+
+        }
+
+        section#sec{
+
+            flex-basis: 100%;
+
+            background-color: #EDE0D4;
+            color: black;
+
+            padding: 15px;
+
+            border-radius: 20px;
+            border: 3px solid black;
+
+            flex-grow: 2;
+            flex-shrink: 1;
+
+        }
+
+        aside#asi{
+
+            flex-basis: 25%;
+
+            background-color: #D4B896;
+            color: #3E2723;
+
+            padding: 15px;
+
+            border-radius: 20px;
+            border: 3px solid black;
+
+            flex-grow: 1;
+            flex-shrink: 1;
+
+        }
+
+        footer#foot{
+
+            background-color: #8B6914;
+            color: white;
+
+            padding: 15px;
+
+            border: 3px solid black;
+
+        }
+
+        @media (max-width: 768px) {
+
+            .conteiner {
+                max-height: 300px;
+
+                font-size: 9px;
+            }
+
+            footer{
+
+            font-size: 9px;
+
+            }
 
         }
 
@@ -67,7 +148,7 @@
     
     <div id="conteudo">
 
-        <header class="conteiner">
+        <header class="conteiner" id="cab">
 
             <nav id="navcont">
 
@@ -87,15 +168,15 @@
 
         </header>
 
-        <main class="conteiner">
+        <main class="conteiner" id="man">
 
-            <section>
+            <section id="sec">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia voluptatibus obcaecati quam assumenda numquam veniam ut, quasi molestiae. Laudantium, accusantium fugit soluta explicabo repellendus consequuntur esse minus placeat perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, ut, atque voluptatem doloribus autem error mollitia enim esse quos consectetur dolore modi qui fugiat. Quam eligendi deleniti ducimus explicabo accusantium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia voluptatibus obcaecati quam assumenda numquam veniam ut, quasi molestiae. Laudantium, accusantium fugit soluta explicabo repellendus consequuntur esse minus placeat perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, ut, atque voluptatem doloribus autem error mollitia enim esse quos consectetur dolore modi qui fugiat. Quam eligendi deleniti ducimus explicabo accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ut nulla voluptate itaque quos laborum numquam harum nihil non sed minus et repellat, veritatis ad laudantium aliquam eligendi ipsa commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veniam quibusdam amet quam nisi dolores labore error facilis tempore, optio, odit dolorum itaque exercitationem laudantium cum atque quasi natus doloremque?</p>
 
             </section>
 
-            <aside>
+            <aside id="asi">
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus molestiae corporis alias, dicta architecto ducimus unde pariatur adipisci ad nihil magni aspernatur hic nobis harum labore et cumque suscipit.</p>
 
@@ -105,7 +186,7 @@
 
     </div>    
 
-    <footer class="conteiner">
+    <footer id="foot">
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error enim animi quidem omnis fugit perspiciatis facilis temporibus porro deserunt at exercitationem, quos aliquid tempore. Quo fuga beatae accusamus. Asperiores, nesciunt?</p>
 
