@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 20</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+
+        header#conteiner{
+            
+            display: flex;
+
+            flex-flow: row nowrap;
+
+            justify-content: space-between;
+
+            align-items: flex-start;
+
+            padding: 20px;
+
+            background: linear-gradient(90deg,#D4BFF0 0%, #A8ECDF 100%);
+
+        }
+
+        div#foto{
+
+            display: flex;
+
+        }
+
+        img{
+
+            flex-basis: 100px;
+
+            flex-shrink: 0;
+
+            height: 100px;
+
+        }
+
+
+        ul{
+
+            display: flex;
+
+            list-style-type: none;
+
+            padding: 20px;
+
+            gap: 15px;
+
+        }
+
+        #conosco {
+
+            background: #4C1D95;
+            color: white;
+            padding: 20px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+        }
+
+        #conosco:hover{
+
+            background-color:  #6D28D9;
+
+            transition: background-color 0.3s;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header id="conteiner">
+
+        <div id="foto">
+
+            <img src="imagens/tech_startup_logo_square.png" alt="Logo da Tech Startup">
+
+        </div>
+
+        <div id="menu">
+
+            <ul>
+
+                <li>
+
+                    <i class="material-icons">home</i>
+                
+                </li>
+
+                <li>
+                    
+                    <i class="material-icons">info</i>
+                
+                </li>
+                <li>
+                    
+                    <i class="material-icons">email</i>
+                
+                </li>
+                <li>
+                    
+                    <i class="material-icons">article</i>
+                
+                </li>
+                <li>
+                    
+                    <i class="material-icons">build</i>
+                
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div id="conosco">
+
+            <p>Fale conosco</p>
+
+        </div>
+
+    </header>
+</body>
+</html>
