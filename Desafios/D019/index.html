@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 19</title>
+    <style>
+
+        body{
+
+            background-color: blue;
+
+        }
+
+        div.conteiner{
+
+            display: flex;
+
+            flex-flow: row nowrap;
+
+            justify-content: space-evenly;
+
+            margin-top: 15px;
+
+            background-color: white;
+
+            padding: 10px;
+
+            border-radius: 15px;
+
+        }
+
+        div.iten{
+
+            width: 300px;
+            height: 100px;
+
+            border: 4px solid blue;
+            border-radius: 10px;
+
+            background-color: yellow;
+
+            margin: 10px;
+
+        }
+
+        div#i1{
+
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 1;
+
+        }
+
+        div#i2{
+
+            flex-basis: 150px;
+            flex-grow: 2;
+            flex-shrink: 0;
+
+        }
+
+        div#i3{
+
+            flex-basis: 150px;
+            flex-grow: 1;
+            flex-shrink: 2;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+
+        <div class="conteiner">
+
+            <div class="iten" id="i1">
+
+    
+
+            </div>
+
+            <div class="iten" id="i2">
+
+
+
+
+            </div>
+
+            <div class="iten" id="i3">
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="conteiner">
+
+            <div class="iten">
+
+
+
+            </div>
+
+            <div class="iten">
+
+
+
+
+            </div>
+
+            <div class="iten">
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="conteiner">
+
+            <div class="iten">
+
+
+
+            </div>
+
+            <div class="iten">
+
+
+
+
+            </div>
+
+            <div class="iten">
+
+
+
+
+            </div>
+
+        </div>
+    
+    </main>
+
+</body>
+</html>
