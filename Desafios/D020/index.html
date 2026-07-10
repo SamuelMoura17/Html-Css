@@ -15,11 +15,13 @@
 
             justify-content: space-between;
 
-            align-items: flex-start;
+            align-items: center;
 
             padding: 20px;
 
             background: linear-gradient(90deg,#D4BFF0 0%, #A8ECDF 100%);
+
+            border-radius: 10px;
 
         }
 
@@ -27,18 +29,32 @@
 
             display: flex;
 
+            flex-shrink: 0;
+
+            flex-grow: 0;
+
         }
 
         img{
 
             flex-basis: 100px;
-
+            flex-grow: 0;
             flex-shrink: 0;
 
             height: 100px;
 
         }
 
+        div#menu{
+
+            display: flex;
+
+            flex-grow: 1;
+            flex-shrink: 0;
+
+            justify-content: center;
+
+        }  
 
         ul{
 
@@ -48,25 +64,68 @@
 
             padding: 20px;
 
-            gap: 15px;
+            gap: 13px;
 
         }
 
-        #conosco {
+        li{
 
-            background: #4C1D95;
-            color: white;
-            padding: 20px;
+            flex-shrink: 0;
+            flex-grow: 0;
 
-            border-radius: 8px;
+        }
+
+        a{
+
+            color: black;
+
+        }
+
+        i.material-icons{
+
+            font-size: clamp(1em, 7vw, 30px);
+
+        }
+
+        i.material-icons:hover{
+
+            font-size: clamp(1.2em, 7.1vw, 32px);
+
+            transition: 0.3s;
 
             cursor: pointer;
 
         }
 
+        #conosco {
+
+            display: flex;
+
+            justify-content: flex-end;
+
+            background: #4C1D95;
+            color: white;
+
+            border-radius: 40px;
+
+            cursor: pointer;
+
+            flex-grow: 0;
+            flex-shrink: 0;
+
+        }
+
+        #conosco > p{
+
+            padding: 1.5vw;
+
+            font-size: clamp(0.8em, 2.1vw, 3em);
+
+        }
+
         #conosco:hover{
 
-            background-color:  #6D28D9;
+            background-color: #6D28D9;
 
             transition: background-color 0.3s;
 
@@ -75,6 +134,7 @@
     </style>
 </head>
 <body>
+
     <header id="conteiner">
 
         <div id="foto">
@@ -89,28 +149,48 @@
 
                 <li>
 
-                    <i class="material-icons">home</i>
+                    <a href="index.html">
+
+                        <i class="material-icons">home</i>
+
+                    </a>
                 
                 </li>
 
                 <li>
                     
-                    <i class="material-icons">info</i>
+                    <a href="https://css--tricks-com.translate.goog/snippets/css/a-guide-to-flexbox/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc">
+                        
+                        <i class="material-icons">info</i>
+                    
+                    </a>
                 
                 </li>
                 <li>
                     
-                    <i class="material-icons">email</i>
+                    <a href="mailto:contato@nexora.com">
+                        
+                        <i class="material-icons">email</i>
+                    
+                    </a>
                 
                 </li>
                 <li>
                     
-                    <i class="material-icons">article</i>
+                    <a href="https://www.alura.com.br/artigos/css-guia-do-flexbox?utm_term=&utm_campaign=&utm_source=google&utm_medium=cpc&campaign_id=23805973578__&utm_id=23805973578__&hsa_acc=7964138385&hsa_cam=&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=23815806613&gclid=Cj0KCQjwsMLSBhD9ARIsAIpUTDpM2E44QUqpJu70BOJcwBMfWrqthMKZA9huqMzkxQoJ0yeM049KUGgaAikwEALw_wcB" target="_blank" rel="external">
+                        
+                        <i class="material-icons">article</i>
+                    
+                    </a>
                 
                 </li>
                 <li>
                     
-                    <i class="material-icons">build</i>
+                    <a href="https://github.com/SamuelMoura17" target="_blank" rel="external">
+                        
+                        <i class="material-icons">build</i>
+                    
+                    </a>
                 
                 </li>
 
