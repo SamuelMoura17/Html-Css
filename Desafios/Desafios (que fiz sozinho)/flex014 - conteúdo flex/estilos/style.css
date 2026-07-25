@@ -7,27 +7,29 @@
 
     box-sizing: border-box;
 
-    text-align: justify;
-
 }
 
 body{
 
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 1rem;
+
+    text-align: justify;
+
+}
+
+header{
+
+    padding: 20px;
+
+    color: white;
+    background-color: black;
 
 }
 
 header > h1{
 
-    padding: 20px;
-
-}
-
-header > p{
-
-    padding: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -37,45 +39,187 @@ main{
 
 }
 
-section.conteiner{
+section#cont1{
 
     display: flex;
 
     flex-flow: row-reverse wrap;
-    
-    justify-content: center;
+
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 20px;
 
 }
 
-div.midia{
+div#midia1{
 
     display: flex;
 
-    flex: 1 1 300px;
-    
-    gap: 20%;
+    flex-basis: 450px;
 
 }
 
-div.midia > img{
+div#midia1 > img{
 
-    width: 50%;
+    min-width: 0;
 
-    margin: auto;
+    flex: 0 1 300px;
+
+    margin: 15px auto;
 
 }
 
-div.text{
+div#text1{
 
-    flex-basis: 55vw;
+    flex: 1 0 300px;
 
     padding: 20px;
 
+}
+
+div#text1 > h2{
+    
+    margin-bottom: 10px;
 
 }
 
-div.text > h2{
+aside#cont2{
+
+    display: flex;
+
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+div#text2{
+
+    flex: 1 0 300px;
+
+    padding: 20px;
+
+    margin-bottom: 20px
+
+}
+
+div#text2 > h2{
 
     margin-bottom: 10px;
+
+}
+
+div#midia2{
+
+    display: flex;
+
+    flex-basis: 450px;
+
+}
+
+div#midia2 > iframe{
+
+    display: block;
+    
+    margin: auto auto 20px auto;
+
+    min-width: 0;
+
+}
+
+footer#footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: rgb(255, 255, 255);
+    background-color: black;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+p#footer-nome {
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+p#footer-frase {
+
+    font-size: 0.85rem;
+
+    color: rgba(252, 251, 251, 0.6);
+
+    font-style: italic;
+}
+
+div#footer-redes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    text-decoration: none;
+
+
+}
+
+div#footer-redes a{
+
+    text-decoration: none;
+
+    color: white;
+
+    margin: 5px 0px 5px 0px;
+
+}
+
+div#footer-redes a:hover{
+
+    text-decoration: underline;
+
+}
+
+div#footer-redes a:hover {
+
+    text-shadow: 0px 4px 15px rgba(255, 255, 255, 0.9);
+
+}
+
+p#footer-copy {
+
+    font-size: 0.75rem;
+
+    color: rgba(253, 253, 253, 0.6);
+
+}
+
+p#video{
+
+    margin-top: 5px;
+
+}
+
+a#vide{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+a#vide:hover{
+
+    text-decoration: underline
 
 }
