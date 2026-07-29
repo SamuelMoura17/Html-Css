@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+:root{
+
+    ---cor-principal: #32292F;
+    ---cor-secundaria: #575366;
+    ---cor-terciaria: #6E7DAB;
+
+}
+
+*{
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+
+    line-height: 1.5;
+
+
+}
+
+header#head{
+
+    background-color: var(---cor-terciaria);
+
+    padding: 20px;
+
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.418);
+
+}
+
+header#head > h1{
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 10px;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.548);
+
+}
+
+header#head > p{
+
+    color: white;
+
+    font-size: 1rem;
+
+    text-align: justify
+
+}
+
+main{
+
+    color: var(---cor-principal);
+
+}
+
+section#conteiner{
+
+    display: flex;
+
+    padding: 20px;
+
+    flex-flow: column wrap;
+
+}
+
+footer#footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: var(---cor-terciaria);
+    color: rgb(0, 0, 0);
+
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.274);
+
+    font-family: "Inter", sans-serif;
+
+    margin-top: 20px;
+
+}
+
+p#footer-nome {
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+p#footer-frase {
+
+    font-size: 0.85rem;
+
+    color: rgba(0, 0, 0, 0.6);
+
+    font-style: italic;
+
+    margin-bottom: 10px;
+
+}
+
+div#footer-redes {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+div#footer-redes a:hover {
+
+    text-shadow: 0px 4px 15px rgba(24, 23, 23, 0.9);
+
+}
+
+p#footer-copy {
+
+    font-size: 0.75rem;
+
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+a{
+
+    color: var(--cor5);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
