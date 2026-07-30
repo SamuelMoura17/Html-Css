@@ -80,6 +80,17 @@ section#conteiner{
 
 }
 
+div.fios{
+
+    background-color: var(---cor-secundaria);
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
 footer#footer {
 
     text-align: center;
