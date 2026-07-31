@@ -18,12 +18,24 @@
 
 }
 
+body, html{
+
+    height: 100vh;
+
+}
+
 body{
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
 
     line-height: 1.5;
+
+    display: flex;
+
+    min-height: 100vh;
+
+    flex-direction: column;
 
 
 }
@@ -58,13 +70,15 @@ header#head > p{
 
     font-size: 1rem;
 
-    text-align: justify
+    text-align: justify;
 
 }
 
 main{
 
     color: var(---cor-principal);
+    
+    flex: 1;
 
 }
 
@@ -76,11 +90,23 @@ section#conteiner{
 
     flex-flow: row wrap;
 
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    height: 100%;
 
 }
 
 div.fios{
+
+    display: flex;
+
+    flex-flow: column nowrap;
+
+    justify-content: flex-start;
 
     background-color: var(---cor-secundaria);
     color: white;
@@ -89,13 +115,112 @@ div.fios{
 
     border-radius: 10px;
 
+    flex-basis: 190px;
+
+    text-align: center;
+
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.589);
+
+    border: 3px solid black;
+
+    cursor: pointer;
+
 }
+
+div#cor:hover{
+
+    border: 3px solid whitesmoke;
+
+    transform: translateY(10px);
+
+    transition: 0.5s;
+
+}
+
+div#sao:hover{
+
+    border: 3px solid red;  
+
+    transform: translateY(10px);
+
+    transition: 0.5s;
+
+}
+
+div#san:hover{
+
+    border: 3px solid whitesmoke;
+
+    transform: translateY(10px);
+
+    transition: 0.5s;
+
+}
+
+div#fla:hover{
+
+    border: 3px solid red;  
+
+    transform: translateY(10px);
+
+    transition: 0.5s;
+
+}
+
+div#pal:hover{
+
+    border: 3px solid green;  
+
+    transform: translateY(10px);
+
+    transition: 0.5s;
+
+}
+
+div#int:hover{
+
+    border: 3px solid red;  
+
+    transform: translateY(10px);
+
+    transition: 0.5s;
+
+}
+
+img.logo{
+
+    min-width: 0;
+
+    flex-basis: 100px;
+
+    height: 100px;
+
+}
+
+h2.nomes{
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.377);
+
+}
+
+p.textos{
+
+    text-align: start;
+
+    font-size: 0.9rem;
+
+}
+
 
 footer#footer {
 
     text-align: center;
 
-    padding: 15px;
+    padding: 10px;
 
     background-color: var(---cor-quaternaria);
     color: rgb(0, 0, 0);
@@ -105,12 +230,6 @@ footer#footer {
     font-family: "Inter", sans-serif;
 
     margin-top: 20px;
-
-    position: absolute;
-
-    bottom: 0;
-
-    width: 100vw;
 
 }
 
@@ -124,6 +243,8 @@ p#footer-nome {
 
     color: white;
 
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
+
 }
 
 p#footer-frase {
@@ -135,6 +256,8 @@ p#footer-frase {
     font-style: italic;
 
     margin-bottom: 10px;
+
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.555);
 
 }
 
@@ -164,11 +287,13 @@ p#footer-copy {
 
     color: white;
 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.76);
+
 }
 
 a{
 
-    color: var(--cor5);
+    color: white;
 
     text-decoration: none;
 
