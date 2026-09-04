@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+div.conteiner{
+
+    width: 97vw;
+
+}
+
 div.topo{
 
     grid-area: 1 / 1 / 2 / 6;
@@ -12,11 +18,19 @@ div.menu{
 
 }
 
+div.menu ul{
+
+    font-size: 2.5vw;
+
+}
+
 div.principal{
 
     grid-area: 3 / 1 / 5 / 6;
 
     width: 100%;
+
+    padding: 0px 30px 0px 20px;
 
 }
 
@@ -34,11 +48,14 @@ div.videos{
 
     display: flex;
 
-    flex-flow: row nowrap;
+    flex-flow: column wrap;
 
     gap: 20px;
 
     justify-content: center;
+    align-items: center;
+
+    margin: auto;
 
 }
 
